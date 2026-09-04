@@ -1,0 +1,14 @@
+Type: Slowpoke
+Name: Bob
+HP: 100
+Attack: 10
+Defend: 20
+
+Move1: Grow
+Move2: Curse
+Move3: WaterGun
+Move4: Heal
+
+//pokemon's image
+Image: ./image/slowpoke1.jpg
+

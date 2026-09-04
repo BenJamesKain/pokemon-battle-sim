@@ -1,0 +1,14 @@
+Type: Charizard
+Name: Henry
+HP: 25
+Attack: 17
+Defend: 157
+
+Move1: Flamethrower
+Move2: IronDefense
+Move3: AirSlash
+Move4: HeatWave
+
+//pokemon's image
+Image: ./image/slowpoke1.jpg
+

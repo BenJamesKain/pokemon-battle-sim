@@ -1,0 +1,125 @@
+Pokemon pokemon1 = Pokemon("src/Pokemon/Pokemon1.txt");
+
+Pokemon pokemon2 = Pokemon("src/Pokemon/Pokemon2.txt");
+
+// Getting the database from a text file
+spelldatabase "src/SpellDatabase.txt";
+
+// Initializing a variable
+String name = "";
+
+// Displaying the pokemon on the screen
+show pokemon1;
+
+show pokemon2;
+
+ 
+// Main game logic.
+// Battle goes until one of the pokemon has 0 hp
+while(pokemon1.hp>0 && pokemon2.hp>0) {
+
+    // Battle goes on for 100 turns
+    for (int i = 0; i <100; i++) {
+
+        // Each of these three lines is a pokemon attacking/performing an action on a target.
+        // User - Action - Target
+        pokemon1 move1 pokemon2;
+
+        pokemon1 move1 pokemon1;
+
+        pokemon2 move4 pokemon1;
+
+        // Checking if any pokemon died
+        if(pokemon1.hp<0) {
+            // printing the loser message
+            print pokemon1.type + " lost the battle";
+            // getting the name of the pokemon who won
+            name = pokemon2.name;
+            // Exiting the block
+            break;
+
+        // Same thing here, but with the other pokemon.
+        } elseif(pokemon1.hp<0) {
+            print pokemon2.type + " lost the battle";
+            name = pokemon1.name;
+            break;
+
+        // Both pokemon are alive at the end of the turn
+        } else {    
+
+            // Move onto the next turn
+            print "Battle continue";
+            continue;
+        }
+        
+    }
+    
+}
+
+// printing the name of the winner pokemon + "win the battle" to the textbox
+print name + "win the battle!";
+
+ 
+// Setting pokemon stats
+int number = 100;
+
+// Setting pokemon hp to 100
+pokemon1.hp = number;
+
+// Setting pokemon defense value to -5
+pokemon1.defense = -5;
+
+// Setting pokemon attack value to 10
+pokemon1.attack = 10;
+
+// Setting the hp for pokemon 1 to 250
+pokemon1.hp = pokemon1.hp + 150;
+
+// Setting the attack for pokemon 1 to 14.5
+pokemon1.attack = ((pokemon1.attack * 3 - 3) + 2)/2;
+
+// Function to heal the passed in pokemon
+function void healHp(Pokemon pk) {
+
+    // Check if the pokemon is dead 
+    if(pk.hp<0) {
+
+        // perform the "heal" move on itself
+        pk move4 pk;
+    }
+}
+
+// Function to add to the attack of passed in pokemon, and returning new pokemon's attack
+function int addAttack(Pokemon pk) {
+    // Don't these just cancel each other out?
+    pk.attack += 5;
+    pk.attack -= 5;
+    
+    // The number to increase the attack by
+    int number = 10;
+
+    // Returning the new attack of the pokemon
+    return number + pk.attack;
+}
+
+// Initializing boolean values
+// The following code seems to me like it is for randomizing two values and comparing them.
+// This could be for something like a move with a certain chance to fail.
+// If bool and bool2 are randomized, then it will result in a 50% chance for bool to be true.
+// Then, if bool is false (50% chance), the pokemon is healed and the attack stat is raised.
+boolean bool = true;
+boolean bool2 = false;
+
+// Unless we are doing something with this later, this always results in bool being true
+// Bool = (True AND False) OR True;
+bool = (bool && bool2) || bool;
+
+// If the above condition passes, then we:
+if(!bool) {
+    // Heal pokemon 1, in a function we don't have yet
+    healHp(pokemon1);
+
+    // Raise the pokemon's attack stat
+    int attackvalue = addAttack(pokemon1);
+
+}

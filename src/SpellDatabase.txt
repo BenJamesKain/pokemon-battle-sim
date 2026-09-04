@@ -1,0 +1,47 @@
+//name of the spell
+Grow{
+//indicate the type of the spell
+Defend,
+//indicate the value of the spell
+Value 5
+}
+
+Curse{
+Defend,
+Value -2
+}
+
+WaterGun{
+Attack,
+Value 10
+}
+
+Heal{
+Attack,
+Value -10
+}
+
+BugBite{
+Attack,
+Value 20
+}
+
+HeatWave{
+Attack,
+Value 120
+}
+
+Flamethrower{
+Attack,
+Value 80
+}
+
+IronDefense{
+Defend,
+Value 30
+}
+
+AirSlash{
+Attack,
+Value 70
+}
